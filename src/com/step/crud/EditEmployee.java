@@ -1,4 +1,4 @@
-package com.step.editEmployee;
+package com.step.crud;
 
 import com.step.department.Department;
 import com.step.department.EDepartment;
@@ -12,8 +12,8 @@ import java.util.Scanner;
 
 
 public class EditEmployee {
-    private static Scanner sc     = new Scanner(System.in);
-    private static MenuClass show = new MenuClass();
+    private static final Scanner sc     = new Scanner(System.in);
+    private static final MenuClass show = new MenuClass();
 
 ///// / // /  // // ///
     public void editEmployee( List<Employee> employeesList ){
@@ -42,7 +42,6 @@ public class EditEmployee {
                                 sc.nextLine();
                             } else {
                                 e.setfName(name);
-                                oneMoreTime = true;
                             }
                             oneMoreTime = true;
                             break;
