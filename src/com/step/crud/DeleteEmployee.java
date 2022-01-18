@@ -10,7 +10,6 @@ public class DeleteEmployee {
 
     private static final Scanner sc         = new Scanner(System.in);
     static List<Employee> employeesFound    = new LinkedList<>();
-//    private static ShowEmployees show = new ShowEmployees();
 
     public void deleteEmployee( List<Employee> employeesList ) {
         employeesFound = FindEmployee.findEmployee( employeesList );
@@ -18,16 +17,6 @@ public class DeleteEmployee {
             System.out.println();
             System.out.println("Next Employee(s) will be Deleted !!");
             ShowEmployees.showEmployees(employeesFound);
-            //                                    for (Employee e: employeesList) {
-            //                                        for ( Employee em: employeesFound) {
-            //                                            if( e.equals( em ) ){
-            //                                                employeesList.remove( e );
-            //                                            }
-            //                                        }
-            //                                    }//dupa ideie treb sa mearga asta da nustiu dece nu merge
-            //                                    (in caz ca sunt mai mult de un employee in Array se sterge doar primul employee
-            //                                    for de mai jos merge),
-
             System.out.print("\n\t\tIf you are positive for delete type: YES, else NO ??? :");
             String check = sc.nextLine();
             if( check.equalsIgnoreCase("YES") ){
@@ -47,6 +36,4 @@ public class DeleteEmployee {
         }
         employeesFound.clear();
     }
-
-
 }

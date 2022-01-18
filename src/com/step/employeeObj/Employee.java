@@ -71,9 +71,6 @@ public class Employee {
         this.department = department;
     }
 
-
-
-
 /////  / / // / / //// ///  //// // // //
 
     @Override
@@ -101,12 +98,5 @@ public class Employee {
     public List<String> getDateOfHire() {
         return dateOfHire;
     }
-
-/////
-
-
-
-
-
 
 }
